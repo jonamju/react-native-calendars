@@ -218,7 +218,7 @@ const CalendarList = (props: CalendarListProps, ref: any) => {
         return true;
       }
     }
-    return false;
+    return true;
   }, [currentMonth]);
 
   const renderItem = useCallback(({item}: any) => {
