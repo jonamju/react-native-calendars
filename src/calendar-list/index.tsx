@@ -100,7 +100,8 @@ const CalendarList = (props: CalendarListProps, ref: any) => {
     onMomentumScrollEnd,
     /** FlatList props */
     onEndReachedThreshold,
-    onEndReached
+    onEndReached,
+    ListFooterComponent
   } = props;
   
   const calendarProps = extractCalendarProps(props);
@@ -306,6 +307,7 @@ const CalendarList = (props: CalendarListProps, ref: any) => {
         onMomentumScrollEnd={onMomentumScrollEnd}
         onScrollBeginDrag={onScrollBeginDrag}
         onScrollEndDrag={onScrollEndDrag}
+        ListFooterComponent={ListFooterComponent}
       />
       {renderStaticHeader()}
     </View>
