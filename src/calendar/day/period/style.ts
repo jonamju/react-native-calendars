@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {Platform, StyleSheet} from 'react-native';
 import * as defaultStyle from '../../../style';
 import {Theme} from '../../../types';
 
@@ -37,7 +37,7 @@ export default function styleConstructor(theme: Theme = {}) {
     },
 
     text: {
-      marginTop: 7,
+      marginTop: Platform.OS == 'ios' ? 7 : 0,
       fontSize: appStyle.textDayFontSize,
       fontFamily: appStyle.textDayFontFamily,
       fontWeight: appStyle.textDayFontWeight,
