@@ -37,7 +37,7 @@ export default function styleConstructor(theme: Theme = {}) {
     },
 
     text: {
-      marginTop: Platform.OS == 'ios' ? 7 : 0,
+      marginTop: Platform.OS == 'ios' ? 7 : -3,
       fontSize: appStyle.textDayFontSize,
       fontFamily: appStyle.textDayFontFamily,
       fontWeight: appStyle.textDayFontWeight,
